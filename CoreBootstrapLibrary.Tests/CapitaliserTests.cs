@@ -1,3 +1,4 @@
+using System;
 using Xunit;
 
 namespace CoreBootstrapLibrary.Tests
@@ -16,6 +17,12 @@ namespace CoreBootstrapLibrary.Tests
 
             // Assert
             Assert.Equal("IS THIS A COMMENTARY ON CAPITALISM?", output);
+        }
+        
+        [Fact]
+        public void FailingText()
+        {
+            throw new Exception("i failed on purpose");
         }
     }
 }
