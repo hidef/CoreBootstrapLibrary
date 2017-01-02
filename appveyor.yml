@@ -1,0 +1,13 @@
+version: 0.0.{build}
+buildscript:
+- cmd: >-
+    dotnet restore
+
+    dotnet build CoreBootstrapLibrary
+
+    dotnet pack CoreBootstrapLibrary
+testscript:
+- cmd: >-
+    dotnet test CoreBootstrapLibrary.Tests
+artifacts:
+- path: '**/*.nupkg'
