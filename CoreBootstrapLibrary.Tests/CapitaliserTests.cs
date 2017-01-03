@@ -20,7 +20,7 @@ namespace CoreBootstrapLibrary.Tests
         }
         
         [Fact]
-        public void FailingText()
+        public void FailingTest()
         {
             throw new Exception("i failed on purpose");
         }
